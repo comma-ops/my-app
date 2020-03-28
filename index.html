@@ -3,10 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dot.css" />
     <title>Document!</title>
   </head>
-
   <body>
-    <p>seghtg</p>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+    <form action=".php" id="survey-form">
+      <label for="ime">Name</label>
+      <input
+        type="text"
+        name="ime"
+        id="ime"
+        required
+        placeholder="Enter your name"
+      />
+      <br />
+      <br />
+      <label for="emejl">Email</label>
+      <input
+        type="email"
+        name="emejl"
+        id="emejl"
+        placeholder="Enter your email"
+        required
+      />
+      <br />
+      <br />
+      <label for="starost">Age</label>
+      <input
+        type="number"
+        name="starost"
+        id="starost"
+        required
+        placeholder="Age"
+      />
+      <br /><br />
+    </form>
+    <label for="role">Witch option describes your current role?</label>
+    <select name="role" id="dropdown">
+      <option value="Student" id="dropdown">Student</option>
+      <option value="Teacher" id="dropdown">Teacher</option>
+    </select>
+    <br /><br />
+    <label>
+      How likeliy is thad you would recommend freeCodeCamp to a friend?
+    </label>
+    <input type="radio" name="definitly" id="definitly" />
+    <label for="definitly">Definitly</label>
+    <input type="radio" name="maybe" id="maybe" />
+    <label for="maybe">Maybe</label>
+    <input type="radio" name="maybe " id="maybe " />
+    <label for="maybe ">Not </label>
+    <label for="maybe"></label> <br /><br />
+    <label for="option">What do you like most in FCC</label>
+    <select name="option" id="option">
+      <option value="select0">select an option</option>
+    </select>
+    <br /><br />
+    <label for="future"
+      >Things that shoould be improved in future(Check all that apply)</label
+    >
+    <input type="checkbox" name="front edn" id="front end" />Front-end Projects
+
+    <input type="checkbox" name="back edn" id="back end" />Back-end Projects
+
+    <input type="checkbox" name="data visualiton" id=" data visualiton" />Data
+    visualiton <br />
+    <br />
+    <input type="button" value="submit" />
   </body>
 </html>
